@@ -10,7 +10,7 @@ model:
   labels: &labels ['background', 'speech']
 
   train_ds:
-    manifest_filepath: '/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/fisher_speech_train_balance.json,/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/fisher_silence_train.json'
+    manifest_filepath: '/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/fisher_speech_train_balance.json,/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/fisher_silence_train.json,/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/swbd_train.json'
     sample_rate: *sample_rate
     labels: *labels
     batch_size: 128
@@ -19,7 +19,7 @@ model:
 
 
   validation_ds:
-    manifest_filepath: '/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/fisher_speech_validation_balance.json,/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/fisher_silence_validation.json'
+    manifest_filepath: '/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/fisher_speech_validation_balance.json,/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/fisher_silence_validation.json,/raid/data/samsungSSD/NVIDIA/datasets/manifest_fisher_swbd/swbd_validation.json'
     sample_rate: *sample_rate
     labels: *labels
     batch_size: 128
